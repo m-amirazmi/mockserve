@@ -40,4 +40,4 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh -i ~/.ssh/id_rsa ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "cd ~/apps/mockserve/ && git pull && pm2 restart mockserve"
+          ssh -i ~/.ssh/id_rsa ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "cd ~/apps/mockserve/ && git pull && npm run build && pm2 restart mockserve"
