@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express";
+import cors from "cors";
 import path from "path";
 import { access, create } from "./controllers/mock.controllers";
 
@@ -7,6 +8,7 @@ const port = 5555;
 
 const reactPath = "../../web/dist";
 
+app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, reactPath)));
 
