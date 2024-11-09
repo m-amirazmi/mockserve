@@ -1,5 +1,5 @@
-import { Button } from "@etiqa-regional/edc-ui-components/button";
 import axios from "axios";
+import { Button } from "@/components/ui/button";
 
 export const App = () => {
   const handleAPI = async () => {

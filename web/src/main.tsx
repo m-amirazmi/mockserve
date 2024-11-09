@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./app";
-import "@etiqa-regional/edc-ui-components/base.css";
+import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
