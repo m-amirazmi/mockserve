@@ -1,0 +1,14 @@
+{
+  "name": "mockserve-app",
+  "version": "0.0.1",
+  "scripts": {
+    "install": "pnpm --prefix ./api install && pnpm --prefix ./web install",
+    "build": "pnpm --prefix ./web build",
+    "start": "pnpm --prefix ./api start",
+    "dev": "pnpm --prefix ./api run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
